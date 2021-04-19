@@ -5,6 +5,11 @@
 ## The tools are tested on Linux Mint 20.1 - Ulyssa, 64bit. and Ubuntu 20.04
 ```
 
+### 0. Install JAVA if you don't have it
+```terminal
+sudo apt install default-jre
+```
+
 ### 1. Download fastqc
 ```terminal
 mkdir -p ~/Downloads/bin
