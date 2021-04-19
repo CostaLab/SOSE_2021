@@ -76,3 +76,29 @@ R
 > devtools::install_github('satijalab/seurat-data')
 > install.packages("https://seurat.nygenome.org/src/contrib/ifnb.SeuratData_3.0.0.tar.gz", repos = NULL, type = "source")
 ```
+
+### 8. SRA toolkit
+```terminal
+Download the latest software at:
+http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=show&f=software&m=software&s=software
+
+And place the binaries in any folder contained in your $PATH. Make sure they are executable (770).
+```
+### 9. Bedtools
+```terminal
+sudo apt install bedtools
+```
+
+### 10. Bowtie 2
+```terminal
+sudo apt install bowtie2
+```
+### 11. samtools
+```terminal
+sudo apt install samtools
+```
+### 12. MACS2
+```terminal
+pip install --user macs2
+```
+
