@@ -71,7 +71,7 @@ sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-
 sudo apt update
 sudo apt install r-base
 wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1106-amd64.deb
-sudo dpkg -i rstudio-1.2.5042-amd64.deb
+sudo dpkg -i rstudio-1.4.1106-amd64.deb
 # Install missing dependencies in linux (if any)
 # from R install additional packages 
 R
