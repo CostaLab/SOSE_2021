@@ -106,4 +106,9 @@ sudo apt install samtools
 ```terminal
 pip install --user macs2
 ```
+### 13. RGT
+```terminal
+pip install RGT
+cd ~/rgtdata
 
+```
