@@ -10,21 +10,8 @@ In this script, we will show you how to analyse NGS data from open chromatin pro
 ### 1. Download Data
 We download all data for analysis in this section.
 
-#### 1.1 Setup your working directory
-```terminal
-mkdir ~/Practice
-cd ~/Practice
-```
-##### 1.2 Download raw sequencing data
-You can download directly from GEO server by
-```terminal
-prefetch SRR1533863 SRR1533847
-```
-This could be very slow depending on your internet. In this case, please download the data from our server
-```terminal
-wget https://costalab.ukaachen.de/open_data/bioinfolab_2021/practical_atac/SRR1533847.sra --no-check-certificate
-wget https://costalab.ukaachen.de/open_data/bioinfolab_2021/practical_atac/SRR1533863.sra --no-check-certificate
-```
+#### 1.1 Convert SRA to FASTQ
+
 SRA file is a compressed version of FASTQ file. When the downloading is  done, we can convert the file format from SRA to FASTQ using SRA toolkit
 ```terminal
 fastq-dump ./SRR1533863.sra
@@ -35,7 +22,7 @@ Finally, let's rename the file names
 mv SRR1533863.fastq MPP.fastq
 mv SRR1533847.fastq B.fastq
 ```
-#### 1.3 Download reference genome
+#### 1.2 Download reference genome
 Since we dont have enough time to analyse the data in a genome-wide manner, we here only download the reference sequence for chromosome 19
 ```terminal
 wget http://hgdownload.soe.ucsc.edu/goldenPath/mm10/chromosomes/chr19.fa.gz
